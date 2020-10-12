@@ -4,7 +4,7 @@ https://qiita.com/azul915/items/5b7063cbc80192343fc0
 # 起動 Rails new
 
 ```
-docker-compose run web rails new . --force --database=mysql --skip-bundle
+make new
 ```
 
 # config/database.ymlを書き換える
@@ -24,12 +24,11 @@ default: &default
 
 ```
 # コンテナをビルド
-docker-compose build
+make build
 ```
 
 ```
-# -dオプションをつけてバックグラウンド実行するとこの後新しいシェルを立ち上げる必要がなくなる
-docker-compose up
+make up
 ```
 
 # データベース作成
