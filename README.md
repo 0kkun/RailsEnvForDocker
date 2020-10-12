@@ -1,6 +1,12 @@
 
 https://qiita.com/azul915/items/5b7063cbc80192343fc0
 
+# イメージをビルド
+
+```
+make build
+```
+
 # 起動 Rails new
 
 ```
@@ -42,13 +48,13 @@ docker-compose run web rake db:create
 # サーバーを止める
 
 ```
-docker-compose down
+make stop
 ```
 
 # Dockerfileやdocker-compose.ymlの変更を反映、railsサーバーを再起動
 
 ```
-docker-compose up --build
+make up
 ```
 
 # bundle installなどのコマンドを実行したい
